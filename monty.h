@@ -45,7 +45,8 @@ typedef struct instruction_s
  * @ins: instructions
  * @len_stack: length of the stack
  * @top: head pointer
- * @num_line: line
+ * @line_number: line num
+ * @num_pieces: num of tokens
  * Description: stores variables that will be used throughout
  * the project.
 */

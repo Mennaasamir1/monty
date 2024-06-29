@@ -12,11 +12,9 @@ void handle_instruction(void)
 		{"pall", &print_all}, {"pop", &delete_it},
 		{"swap", &to_swp}, {"add", &to_add},
 		{"sub", &to_subtract}, {"div", &to_divide},
-		{"mul", &to_multi}, {"rotl", &to_rotate},
-		{"rotr", &to_flip}, {"stack", &stk},
-		{"queue", &to_q},  {"pstr", &print_str},
+		{"mul", &to_multi},
 		{"pchar", &print_char}, {"mod", &to_modulus},
-                {NULL, NULL},  {"nop", &nothing_op}
+		{"nop", &nothing_op}
 	};
 	if (ptr->num_pieces == 0)
 	{
