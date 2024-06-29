@@ -1,26 +1,17 @@
 #include "monty.h"
 /**
- * print_all - the function prints the data of stack to stdout
+ * peek - prints the top element in the stack
  * @stack: stack
- * @line_number: num of the line where the instruction
+ * @line_number: line number
  */
-void print_all(stack_t **stack, unsigned int line_number)
+void peek(stack_t **stack, unsigned int line_number)
 {
-	stack_t *alt = ptr->top;
-
 	if (ptr->top == NULL)
 	{
-		return;
+		dprintf(2, "L%d: can't pint, stack empty\n", line_number);
+		all_arguments_free();
+		exit(EXIT_FAILURE);
 	}
-
 	(void) stack;
-	(void) line_number;
-
-	while (alt != NULL)
-	{
-		printf("%d\n", alt->n);
-		alt = alt->next;
-	}
-
-
+	printf("%d\n", ptr->top->n);
 }
