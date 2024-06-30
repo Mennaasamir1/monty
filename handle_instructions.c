@@ -24,6 +24,7 @@ void handle_instruction(void)
 		{"sub", &to_subtract}, {"div", &to_divide},
 		{"mul", &to_multi}, {"pstr", &print_str},
 		{"pchar", &print_char}, {"mod", &to_modulus},
+		{"rotl", &to_rotate},
 		{"nop", &nothing_op}, {NULL, NULL}
 	};
 	if (ptr->num_pieces == 0)
