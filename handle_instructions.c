@@ -39,6 +39,4 @@ void handle_instruction(void)
 		}
 
 	}
-
-	/*invalid_instruction();*/
 }
