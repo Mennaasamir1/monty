@@ -72,7 +72,7 @@ void stream(char *file);
 void line_into_tokens(void);
 void handle_instruction(void);
 void pieces_free(void);
-void instruction_incorrect(void);
+void invalid_instruction(void);
 void command_run(void);
 void put(stack_t **stack, unsigned int line_number);
 

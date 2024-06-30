@@ -33,7 +33,12 @@ void handle_instruction(void)
 			ptr->ins->f = commands[j].f;
 			return;
 		}
+		else
+		{
+			invalid_instruction();
+		}
 
 	}
-	instruction_incorrect();
+
+	/*invalid_instruction();*/
 }
