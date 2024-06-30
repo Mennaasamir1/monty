@@ -89,7 +89,7 @@ void nothing_op(stack_t **stack, unsigned int line_number);
 void to_add(stack_t **stack, unsigned int line_number);
 void to_rotate(stack_t **stack, unsigned int line_number);
 void to_q(stack_t **stack, unsigned int line_number);
-void peek(stack_t **stack, unsigned int line_number);
+void pint(stack_t **stack, unsigned int line_number);
 void to_subtract(stack_t **stack, unsigned int line_number);
 void to_divide(stack_t **stack, unsigned int line_number);
 void print_str(stack_t **stack, unsigned int line_number);

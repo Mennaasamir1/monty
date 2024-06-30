@@ -4,7 +4,7 @@
  * @stack: stack
  * @line_number: line number
  */
-void peek(stack_t **stack, unsigned int line_number)
+void pint(stack_t **stack, unsigned int line_number)
 {
 	if (ptr->top == NULL)
 	{
