@@ -17,11 +17,11 @@ int main(int argc, char **argv)
 
 	while (getline(&ptr->line_of_text, &v, ptr->show) != -1)
 	{
-		ptr->line_number += 1;/*calcs the lines number*/
-		line_into_tokens();/*break line to tokens*/
-		handle_instruction();/*get the instruction + handle it*/
-		command_run();/*run the function related to the instruction*/
-		pieces_free();/*free tokens*/
+		ptr->line_number += 1;
+		line_into_tokens();
+		handle_instruction();
+		command_run();
+		pieces_free();
 	}
 	stream_closed();
 	args_free();
