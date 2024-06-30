@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * peek - prints the top element in the stack
+ * pint - prints the top element in the stack
  * @stack: stack
  * @line_number: line number
  */
