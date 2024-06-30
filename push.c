@@ -6,6 +6,8 @@
  */
 void put(stack_t **stack, unsigned int line_number)
 {
+	stack_t *alt;
+
 	if (ptr->num_pieces <= 1 || !(IsNum(ptr->pieces[1])))
 	{
 		args_free();
@@ -21,11 +23,26 @@ void put(stack_t **stack, unsigned int line_number)
 	(*stack)->next = (*stack)->prev = NULL;
 	(*stack)->n = (int) atoi(ptr->pieces[1]);
 
-	if (ptr->top != NULL)
+	if (ptr->top == NULL)
+		ptr->top = *stack;
+	else
 	{
-		(*stack)->next = ptr->top;
-		ptr->top->prev = *stack;
+		if (ptr->flag_it)
+		{
+			(*stack)->next = ptr->top;
+			ptr->top->prev = *stack;
+			ptr->top = *stack;
+		}
+		else
+		{
+			alt = ptr->top;
+			while (alt->next)
+			{
+				alt = alt->next;
+			}
+			alt->next = *stack;
+			(*stack)->prev = alt;
+		}
 	}
-	ptr->top = *stack;
 	ptr->len_stack += 1;
 }

@@ -60,6 +60,7 @@ typedef struct arguments
 	int num_pieces;
 	stack_t *top;
 	int len_stack;
+	int flag_it;
 
 } argt;
 extern argt *ptr;

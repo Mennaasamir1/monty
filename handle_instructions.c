@@ -25,6 +25,7 @@ void handle_instruction(void)
 		{"mul", &to_multi}, {"pstr", &print_str},
 		{"pchar", &print_char}, {"mod", &to_modulus},
 		{"rotl", &to_rotate}, {"rotr", &to_flip},
+		{"stack", &stk}, {"queue", &to_q},
 		{"nop", &nothing_op}, {NULL, NULL}
 	};
 	if (ptr->num_pieces == 0)

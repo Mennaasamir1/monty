@@ -21,4 +21,5 @@ void argument_init(void)
 	ptr->line_number = 0;
 	ptr->len_stack = 0;
 	ptr->top = NULL;
+	ptr->flag_it = 1;
 }
