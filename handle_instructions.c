@@ -22,7 +22,7 @@ void handle_instruction(void)
 		{"pall", &print_all}, {"pop", &delete_it},
 		{"swap", &to_swp}, {"add", &to_add},
 		{"sub", &to_subtract}, {"div", &to_divide},
-		{"mul", &to_multi},
+		{"mul", &to_multi}, {"pstr", &print_str},
 		{"pchar", &print_char}, {"mod", &to_modulus},
 		{"nop", &nothing_op}, {NULL, NULL}
 	};
