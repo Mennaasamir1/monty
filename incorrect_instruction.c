@@ -5,8 +5,7 @@
 */
 void instruction_incorrect(void)
 {
-	dprintf(2, "L%d: unknown instruction %s\n",
-			ptr->line_number, ptr->pieces[0]);
+	dprintf(2, "L%d: unknown instruction %s\n", ptr->line_number, ptr->pieces[0]);
 
 	stream_closed();
 	pieces_free();
