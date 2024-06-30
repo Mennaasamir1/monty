@@ -1,4 +1,6 @@
 #include "monty.h"
+
+argt *ptr = NULL;
 /**
  * main - starting of the program
  * @argc: argc number
@@ -6,7 +8,6 @@
  * Return: 1 on success
  */
 
-argt *ptr = NULL;
 int main(int argc, char **argv)
 {
 	size_t v = 0;
